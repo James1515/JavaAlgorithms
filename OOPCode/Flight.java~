@@ -1,0 +1,78 @@
+//
+//
+//
+//
+//
+
+public class Flight
+{
+    private String airlineName;
+    private int flightNumber;
+    private String flightOrigin;
+    private String flightDestination;
+
+    //Constructor: Flight()
+    public Flight(String airName, int flNumber, String flOrigin, String flDes)
+    {
+	this.airlineName = airName;
+	this.flightNumber = flNumber;
+	this.flightOrigin = flOrigin;
+	this.flightDestination = flDes;
+    }//end Constructor
+
+    //---------------Getter Functions--------------//
+    public String GetAirlineName()
+    {
+	return airlineName;
+    }
+
+    public int GetFlightNumber()
+    {
+	return flightNumber;
+    }
+
+    public String GetFlightOrigin()
+    {
+	return flightOrigin;
+    }
+
+    public String GetFlightDestination()
+    {
+	return flightDestination;
+    }
+
+
+
+
+    
+    //---------------Setter Functions--------------//
+
+    
+    public void SetAirlineName(String airName)
+    {
+	airlineName = airName;
+    }
+
+
+    public void SetDestination(String dest)
+    {
+	flightDestination = dest;
+    }
+
+    public void SetOrigin(String ori)
+    {
+	flightOrigin = ori;
+    }
+
+    public void SetFlightNumber(int fNumber)
+    {
+	flightNumber = fNumber;
+    }
+
+    public String toString()
+    {
+	return "The flights name - " + GetAirlineName() + ", number - " +
+	    GetFlightNumber() + ", origin - " + GetFlightOrigin() +
+	    ", and destination - " + GetFlightDestination() + ".";
+    }//end toString()
+}//class Flight
